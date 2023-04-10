@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Multi Level Dropdown Nav Menu</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="bars">&#11166;</div>
+        <div class="logo">
+            <h1>Dev AT</h1>
+        </div>
+        <ul id="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="drop-one">
+                <a href="#">Services <span>&#11167;</span></a>
+                <div class="menu-one">
+                    <ul>
+                        <li><h4>Our Company</h4></li>
+                        <li><img src="/static/img/company.jpg" alt=""></li>
+                    </ul>
+                    <ul>
+                        <li><h4>Design</h4></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Python</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>Development</h4></li>
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Frontend</a></li>
+                        <li><a href="#">Backend</a></li>
+                        <li><a href="#">List Item</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>Skill</h4></li>
+                        <li><a href="#">List Item</a></li>
+                        <li><a href="#">List Item</a></li>
+                        <li><a href="#">List Item</a></li>
+                        <li><a href="#">List Item</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>News</h4></li>
+                        <li><a href="#">List Item</a></li>
+                        <li><a href="#">List Item</a></li>
+                        <li><a href="#">List Item</a></li>
+                        <li><a href="#">List Item</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Team</a></li>
+            <li class="drop-two">
+                <a href="#">Social <span>&#11167;</span></a>
+                <ul class="menu-two">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <script>
+        const bars = document.querySelector(".bars");
+        const navBar = document.querySelector("#navbar");
+        bars.addEventListener("click", ()=>{
+            navBar.classList.toggle("active");
+            bars.classList.toggle("rotate");
+        })
+    </script>
+</body>
+</html>
